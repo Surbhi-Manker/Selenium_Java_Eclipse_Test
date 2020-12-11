@@ -1,0 +1,26 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Class_one {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub.
+
+//---Create driver object for chrome browser.
+		
+/*---Basic Syntax of Creating Class Name X & Object Name driver.
+Class Name=X
+X driver=new X();
+*/
+		
+//---We will strictly implement the methods of WebDriver, So we will make ChromeDriver=WebDriver below.
+//---Class Name = ChromeDriver (& WebDriver)
+//---Before that, We will set here system property using the key & location of.exe file of the driver.
+	
+System.setProperty("webdriver.chrome.driver","C:\\Users\\Surbhi Manker\\Desktop\\RSHTTY\\chromedriver_win32\\chromedriver.exe");
+WebDriver driver=new ChromeDriver();
+	
+//---To Launch/open the application/url/page
+driver.get("https://www.google.com/");
+
+	}
+}
